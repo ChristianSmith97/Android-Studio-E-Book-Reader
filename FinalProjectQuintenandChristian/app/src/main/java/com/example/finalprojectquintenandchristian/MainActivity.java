@@ -10,7 +10,8 @@ import android.widget.*;
 //this is a basic EBook Reader
 //11/27/19
 public class MainActivity extends AppCompatActivity {
-
+    //FINALIZED
+    //initialize book buttons
     private Button CurrentBook;
     private Button book1;
     private Button book2;
@@ -107,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
     private Button book93;
     private Button book94;
     private Button book95;
-
+    //initialize delete buttons
     private Button currentdbook;
     private Button dbook1;
     private Button dbook2;
@@ -204,129 +205,21 @@ public class MainActivity extends AppCompatActivity {
     private Button dbook93;
     private Button dbook94;
     private Button dbook95;
-
-    Book currentBook = new Book("","","");
-    Book b1 = new Book("Adventures of Huckleberry Finn","Mark Twain","https://www.gutenberg.org/files/76/76-0.txt");
-    Book b2 = new Book("The Adventures of Sherlock Holmes","Arthur Conan Doyle","https://www.gutenberg.org/files/1661/1661-0.txt");
-    Book b3 = new Book("The Adventures of Tom Sawyer","Mark Twain","https://www.gutenberg.org/files/74/74-0.txt");
-    Book b4 = new Book("Alice's Adventures in Wonderland","Lewis Carroll","https://www.gutenberg.org/files/11/11-0.txt");
-    Book b5 = new Book("Also sprach Zarathustra. English","Friedrich Wilhelm Nietzsche","https://www.gutenberg.org/files/1998/1998-0.txt");
-    Book b6 = new Book("An Occurrence at Owl Creek Bridge","Ambrose Bierce","http://www.gutenberg.org/cache/epub/375/pg375.txt");
-    Book b7 = new Book("Anne of Green Gables","L. M.  Montgomery","https://www.gutenberg.org/files/45/45-0.txt");
-    Book b8 = new Book("Anthem","Ayn Rand","http://www.gutenberg.org/cache/epub/1250/pg1250.txt");
-    Book b9 = new Book("Autobiography of Benjamin Franklin","Benjamin Franklin","http://www.gutenberg.org/cache/epub/20203/pg20203.txt");
-    Book b10 = new Book("The Awakening, and Selected Short Stories","Kate Chopin","https://www.gutenberg.org/files/160/160-0.txt");
-    Book b11 = new Book("Beowulf: An Anglo-Saxon Epic Poem","","http://www.gutenberg.org/cache/epub/16328/pg16328.txt");
-    Book b12 = new Book("Beyond Good and Evil","Friedrich Wilhelm Nietzsche","http://www.gutenberg.org/cache/epub/4363/pg4363.txt");
-    Book b13 = new Book("The Brothers Karamazov","Fyodor Dostoyevsky","https://www.gutenberg.org/files/28054/28054-0.txt");
-    Book b14 = new Book("Candide","Voltaire","http://www.gutenberg.org/cache/epub/19942/pg19942.txt");
-    Book b15 = new Book("The Chaldean Account of Genesis	A. H.","Sayce and George Smith","https://www.gutenberg.org/files/60559/60559-0.txt");
-    Book b16 = new Book("A Christmas Carol in Prose; Being a Ghost Story of Christmas","Charles Dickens","https://www.gutenberg.org/files/46/46-0.txt");
-    Book b17 = new Book("Common Sense","Thomas Paine","http://www.gutenberg.org/cache/epub/147/pg147.txt");
-    Book b18 = new Book("The Complete Works of William Shakespeare","William Shakespeare","https://www.gutenberg.org/files/100/100-0.txt");
-    Book b19 = new Book("The Confessions of St. Augustine","Bishop of Hippo Saint Augustine","http://www.gutenberg.org/cache/epub/3296/pg3296.txt");
-    Book b20 = new Book("The Count of Monte Cristo","Alexandre Dumas","https://www.gutenberg.org/files/1184/1184-0.txt");
-    Book b21 = new Book("Crime and Punishment","Fyodor Dostoyevsky","https://www.gutenberg.org/files/2554/2554-0.txt");
-    Book b22 = new Book("The Criticism of the Fourth Gospel","W. Sanday","https://www.gutenberg.org/files/60553/60553-0.txt");
-    Book b23 = new Book("Democracy in America Ñ Volume 1","Alexis de Tocqueville","http://www.gutenberg.org/cache/epub/815/pg815.txt");
-    Book b24 = new Book("The Devil's Dictionary","Ambrose Bierce","http://www.gutenberg.org/cache/epub/972/pg972.txt");
-    Book b25 = new Book("Divine Comedy, Longfellow's Translation, Hell","Dante Alighieri","http://www.gutenberg.org/cache/epub/1001/pg1001.txt");
-    Book b26 = new Book("A Doll's House: a play","Henrik Ibsen","http://www.gutenberg.org/cache/epub/2542/pg2542.txt");
-    Book b27 = new Book("Dracula","Bram Stoker","http://www.gutenberg.org/cache/epub/345/pg345.txt");
-    Book b28 = new Book("Dubliners","James Joyce","https://www.gutenberg.org/files/2814/2814-0.txt");
-    Book b29 = new Book("Emma","Jane Austen","https://www.gutenberg.org/files/158/158-0.txt");
-    Book b30 = new Book("Essays by Ralph Waldo Emerson","Ralph Waldo Emerson","http://www.gutenberg.org/cache/epub/16643/pg16643.txt");
-    Book b31 = new Book("Essays of Michel de Montaigne Ñ Complete","Michel de Montaigne","https://www.gutenberg.org/files/3600/3600-0.txt");
-    Book b32 = new Book("Ethan Frome","Edith Wharton","https://www.gutenberg.org/files/4517/4517-0.txt");
-    Book b33 = new Book("Frankenstein; Or, The Modern Prometheus","Mary Wollstonecraft Shelley","https://www.gutenberg.org/files/84/84-0.txt");
-    Book b34 = new Book("Great Expectations","Charles Dickens","https://www.gutenberg.org/files/1400/1400-0.txt");
-    Book b35 = new Book("Grimms' Fairy Tales","Jacob Grimm and Wilhelm Grimm","https://www.gutenberg.org/files/2591/2591-0.txt");
-    Book b36 = new Book("Gulliver's Travels into Several Remote Nations of the World","Jonathan Swift","https://www.gutenberg.org/files/829/829-0.txt");
-    Book b37 = new Book("Heart of Darkness","Joseph Conrad","https://www.gutenberg.org/files/219/219-0.txt");
-    Book b38 = new Book("The Hound of the Baskervilles","Arthur Conan Doyle","https://www.gutenberg.org/files/2852/2852-0.txt");
-    Book b39 = new Book("How the Other Half Lives: Studies Among the Tenements of New York","Jacob A.  Riis","http://www.gutenberg.org/cache/epub/45502/pg45502.txt");
-    Book b40 = new Book("The Iliad","Homer","http://www.gutenberg.org/cache/epub/6130/pg6130.txt");
-    Book b41 = new Book("The Importance of Being Earnest: A Trivial Comedy for Serious People","Oscar Wilde","http://www.gutenberg.org/cache/epub/844/pg844.txt");
-    Book b42 = new Book("Incidents in the Life of a Slave Girl, Written by Herself","Harriet A.  Jacobs","http://www.gutenberg.org/cache/epub/11030/pg11030.txt");
-    Book b43 = new Book("The Interesting Narrative of the Life of Olaudah Equiano, Or Gustavus Vassa, The African","Equiano","http://www.gutenberg.org/cache/epub/15399/pg15399.txt");
-    Book b44 = new Book("Ion","Plato","http://www.gutenberg.org/cache/epub/1635/pg1635.txt");
-    Book b45 = new Book("Jane Eyre: An Autobiography","Charlotte Bront‘","http://www.gutenberg.org/cache/epub/1260/pg1260.txt");
-    Book b46 = new Book("The Jungle","Upton Sinclair","https://www.gutenberg.org/files/140/140-0.txt");
-    Book b47 = new Book("The Kama Sutra of Vatsyayana","Vatsyayana","http://www.gutenberg.org/cache/epub/27827/pg27827.txt");
-    Book b48 = new Book("Le Morte d'Arthur: Volume 1","Sir Thomas Malory","https://www.gutenberg.org/files/1251/1251-0.txt");
-    Book b49 = new Book("Leaves of Grass","Walt Whitman","https://www.gutenberg.org/files/1322/1322-0.txt");
-    Book b50 = new Book("The Legend of Sleepy Hollow","Washington Irving","https://www.gutenberg.org/files/41/41-0.txt");
-    Book b51 = new Book("Les MisŽrables","Victor Hugo","https://www.gutenberg.org/files/135/135-0.txt");
-    Book b52 = new Book("Leviathan","Thomas Hobbes","http://www.gutenberg.org/cache/epub/3207/pg3207.txt");
-    Book b53 = new Book("The Life and Adventures of Robinson Crusoe","Daniel Defoe","https://www.gutenberg.org/files/521/521-0.txt");
-    Book b54 = new Book("Little Women","Louisa May Alcott","http://www.gutenberg.org/cache/epub/514/pg514.txt");
-    Book b55 = new Book("Metamorphosis","Franz Kafka","http://www.gutenberg.org/cache/epub/5200/pg5200.txt");
-    Book b56 = new Book("Moby Dick; Or, The Whale","Herman Melville","https://www.gutenberg.org/files/2701/2701-0.txt");
-    Book b57 = new Book("Modern Copper Smelting","Donald M. Levy","https://www.gutenberg.org/files/59328/59328-0.txt");
-    Book b58 = new Book("A Modest Proposal","Jonathan Swift","https://www.gutenberg.org/files/1080/1080-0.txt");
-    Book b59 = new Book("Narrative of the Captivity and Restoration of Mrs. Mary Rowlandson","Mary White Rowlandson","http://www.gutenberg.org/cache/epub/851/pg851.txt");
-    Book b60 = new Book("Narrative of the Life of Frederick Douglass, an American Slave","Frederick Douglass","http://www.gutenberg.org/cache/epub/23/pg23.txt");
-    Book b61 = new Book("On Liberty","John Stuart Mill","http://www.gutenberg.org/cache/epub/34901/pg34901.txt");
-    Book b62 = new Book("The Parochial History of Cornwall, Volume 1","","https://www.gutenberg.org/files/60555/60555-0.txt");
-    Book b63 = new Book("Peter Pan","J. M.  Barrie","https://www.gutenberg.org/files/16/16-0.txt");
-    Book b64 = new Book("The Picture of Dorian Gray","Oscar Wilde","http://www.gutenberg.org/cache/epub/174/pg174.txt");
-    Book b65 = new Book("Pride and Prejudice","Jane Austen","https://www.gutenberg.org/files/1342/1342-0.txt");
-    Book b66 = new Book("The Prince","Niccol˜ Machiavelli","http://www.gutenberg.org/cache/epub/1232/pg1232.txt");
-    Book b67 = new Book("The Problems of Philosophy","Bertrand Russell","http://www.gutenberg.org/cache/epub/5827/pg5827.txt");
-    Book b68 = new Book("The Prophet","Kahlil Gibran","https://www.gutenberg.org/files/58585/58585-0.txt");
-    Book b69 = new Book("Pygmalion","Bernard Shaw","http://www.gutenberg.org/cache/epub/3825/pg3825.txt");
-    Book b70 = new Book("The Republic","Plato","http://www.gutenberg.org/cache/epub/1497/pg1497.txt");
-    Book b71 = new Book("The Scarlet Letter","Nathaniel Hawthorne","https://www.gutenberg.org/files/25344/25344-0.txt");
-    Book b72 = new Book("Second Treatise of Government","John Locke","http://www.gutenberg.org/cache/epub/7370/pg7370.txt");
-    Book b73 = new Book("Sense and Sensibility","Jane Austen","http://www.gutenberg.org/cache/epub/161/pg161.txt");
-    Book b74 = new Book("Siddhartha","Hermann Hesse","http://www.gutenberg.org/cache/epub/2500/pg2500.txt");
-    Book b75 = new Book("Songs of Innocence, and Songs of Experience","William Blake","https://www.gutenberg.org/files/1934/1934-0.txt");
-    Book b76 = new Book("The Souls of Black Folk	W. E. B.","Du Bois","http://www.gutenberg.org/cache/epub/408/pg408.txt");
-    Book b77 = new Book("The Strange Case of Dr. Jekyll and Mr. Hyde","Robert Louis Stevenson","https://www.gutenberg.org/files/43/43-0.txt");
-    Book b78 = new Book("A Study in Scarlet","Arthur Conan Doyle","https://www.gutenberg.org/files/244/244-0.txt");
-    Book b79 = new Book("A Tale of Two Cities","Charles Dickens","https://www.gutenberg.org/files/98/98-0.txt");
-    Book b80 = new Book("The Theory of the Leisure Class","Thorstein Veblen","http://www.gutenberg.org/cache/epub/833/pg833.txt");
-    Book b81 = new Book("The Time Machine","H. G.  Wells","https://www.gutenberg.org/files/35/35-0.txt");
-    Book b82 = new Book("The Tragical History of Doctor Faustus","Christopher Marlowe","http://www.gutenberg.org/cache/epub/779/pg779.txt");
-    Book b83 = new Book("Treasure Island","Robert Louis Stevenson","https://www.gutenberg.org/files/120/120-0.txt");
-    Book b84 = new Book("The Turn of the Screw","Henry James","https://www.gutenberg.org/files/209/209-0.txt");
-    Book b85 = new Book("Ulysses","James Joyce","https://www.gutenberg.org/files/4300/4300-0.txt");
-    Book b86 = new Book("Uncle Tom's Cabin","Harriet Beecher Stowe","https://www.gutenberg.org/files/203/203-0.txt");
-    Book b87 = new Book("The Used People Lot","Irving E. Fang","http://www.gutenberg.org/cache/epub/60545/pg60545.txt");
-    Book b88 = new Book("Walden, and On The Duty Of Civil Disobedience","Henry David Thoreau","https://www.gutenberg.org/files/205/205-0.txt");
-    Book b89 = new Book("War and Peace","graf Leo Tolstoy","https://www.gutenberg.org/files/2600/2600-0.txt");
-    Book b90 = new Book("The War of the Worlds","H. G.  Wells","https://www.gutenberg.org/files/36/36-0.txt");
-    Book b91 = new Book("The Wonderful Wizard of Oz","L. Frank  Baum","http://www.gutenberg.org/cache/epub/55/pg55.txt");
-    Book b92 = new Book("The Works of Edgar Allan Poe Ñ Volume 2","Edgar Allan Poe","https://www.gutenberg.org/files/2148/2148-0.txt");
-    Book b93 = new Book("The Works of Edgar Allan Poe, The Raven Edition","Edgar Allan Poe","http://www.gutenberg.org/cache/epub/25525/pg25525.txt");
-    Book b94 = new Book("Wuthering Heights","Emily Bront'","http://www.gutenberg.org/cache/epub/768/pg768.txt");
-    Book b95 = new Book("The Yellow Wallpaper","Charlotte Perkins Gilman","https://www.gutenberg.org/files/1952/1952-0.txt");
-
-
-    Book[] BLArray = new Book[]
-            {
-                    currentBook,
-                    b1, b2, b3, b4, b5, b6, b7, b8, b9,
-                    b10, b11, b12, b13, b14, b15, b16, b17, b18, b19,
-                    b20, b21, b22, b23, b24, b25, b26, b27, b28, b29,
-                    b30, b31, b32, b33, b34, b35, b36, b37, b38, b39,
-                    b40, b41, b42, b43, b44, b45, b46, b47, b48, b49,
-                    b50, b51, b52, b53, b54, b55, b56, b57, b58, b59,
-                    b60, b61, b62, b63, b64, b65, b66, b67, b68, b69,
-                    b70, b71, b72, b73, b74, b75, b76, b77, b78, b79,
-                    b80, b81, b82, b83, b84, b85, b86, b87, b88, b89,
-                    b90, b91, b92, b93, b94, b95
-            };
-
-
-
+    //initialize book array
+    Button[] bArray;
+    Button[] dbArray;
+    Book[] BLArray;
+    //initialize save data
     public static final String SHARED_PREFS = "sharedPrefs";
     public static final Book[] BookList = null;
+
+    //NEED WORKED ON - load preferences or create everything
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //identifying book button IDs
         CurrentBook = findViewById(R.id.b0);
         book1 = findViewById(R.id.b1);
         book2 = findViewById(R.id.b2);
@@ -423,8 +316,9 @@ public class MainActivity extends AppCompatActivity {
         book93 = findViewById(R.id.b93);
         book94 = findViewById(R.id.b94);
         book95 = findViewById(R.id.b95);
-        Button[] bArray=
-        {
+        //array of book buttons
+        bArray = new Button[]
+                {
             CurrentBook,book1,book2,book3,book4,book5,book6,book7,book8,book9,
             book10,book11,book12,book13,book14,book15,book16,book17,book18,book19,
             book20,book21,book22,book23,book24,book25,book26,book27,book28,book29,
@@ -436,7 +330,7 @@ public class MainActivity extends AppCompatActivity {
             book80,book81,book82,book83,book84,book85,book86,book87,book88,book89,
             book90,book91,book92,book93,book94,book95
         };
-
+        //identifying delete button IDs
         currentdbook = findViewById(R.id.d0);
         dbook1 = findViewById(R.id.d1);
         dbook2 = findViewById(R.id.d2);
@@ -533,9 +427,10 @@ public class MainActivity extends AppCompatActivity {
         dbook93 = findViewById(R.id.d93);
         dbook94 = findViewById(R.id.d94);
         dbook95 = findViewById(R.id.d95);
-
-        Button[] dbArray=
-            {
+        //FINALIZED
+        //array of delete buttons
+        dbArray = new Button[]
+                {
                 currentdbook,dbook1,dbook2,dbook3,dbook4,dbook5,dbook6,dbook7,dbook8,dbook9,
                 dbook10,dbook11,dbook12,dbook13,dbook14,dbook15,dbook16,dbook17,dbook18,dbook19,
                 dbook20,dbook21,dbook22,dbook23,dbook24,dbook25,dbook26,dbook27,dbook28,dbook29,
@@ -547,7 +442,8 @@ public class MainActivity extends AppCompatActivity {
                 dbook80,dbook81,dbook82,dbook83,dbook84,dbook85,dbook86,dbook87,dbook88,dbook89,
                 dbook90,dbook91,dbook92,dbook93,dbook94,dbook95
             };
-
+        //CHECK IF BOOK LIST ALREADY EXISTS, IF SO LOAD IT, IF NOT POPULATE IT
+        //populate available books
         Book currentBook = new Book("","","");
         Book b1 = new Book("Adventures of Huckleberry Finn","Mark Twain","https://www.gutenberg.org/files/76/76-0.txt");
         Book b2 = new Book("The Adventures of Sherlock Holmes","Arthur Conan Doyle","https://www.gutenberg.org/files/1661/1661-0.txt");
@@ -644,9 +540,9 @@ public class MainActivity extends AppCompatActivity {
         Book b93 = new Book("The Works of Edgar Allan Poe, The Raven Edition","Edgar Allan Poe","http://www.gutenberg.org/cache/epub/25525/pg25525.txt");
         Book b94 = new Book("Wuthering Heights","Emily Bront'","http://www.gutenberg.org/cache/epub/768/pg768.txt");
         Book b95 = new Book("The Yellow Wallpaper","Charlotte Perkins Gilman","https://www.gutenberg.org/files/1952/1952-0.txt");
-
-
-        Book[] BLArray = new Book[]
+    //FINALIZED
+        //insert available books into book array
+        BLArray = new Book[]
         {
                 currentBook,
                 b1, b2, b3, b4, b5, b6, b7, b8, b9,
@@ -660,12 +556,13 @@ public class MainActivity extends AppCompatActivity {
                 b80, b81, b82, b83, b84, b85, b86, b87, b88, b89,
                 b90, b91, b92, b93, b94, b95
         };
-    for(int i = 0;i<96;i++){
-        bArray[i].setText(BLArray[i].getBookTitle());
-    }
+        //populate button text with book titles
+        for(int i = 0;i<96;i++){
+            bArray[i].setText(BLArray[i].getBookTitle());
+        }
 
     }//close onCreate
-
+    //NEED TO WORK ON - on click checks if the book is downloaded first, if so it passes the book, if not it downloads it and changes the buttons color
     //opens book
     public void o(View v){
         //location of book in BookArray
@@ -676,14 +573,17 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("bookURL", BLArray[id].getURL());
         startActivity(intent);
     }
+    //NEED TO WORK ON - on click deletes the string in book array, then changes the color of the book button
     //deletes book
     public void d(View v){
+        int id = Integer.parseInt(getResources().getResourceEntryName(v.getId()).substring(1));
+        BLArray[id].setContent("");
 
     }
 
 }//close main activity
 
-
+//FINALIZED
 class Book extends AppCompatActivity
     {
         //variables
